@@ -72,8 +72,8 @@ def load_prediction_model():
     import pickle
     
     # Path to pre-trained model
-    model_path = Path(__file__).resolve().parent / "maxencedauphin" / "bgg-project" / "models" / "pipeline_baseline.pkl"
-    
+    # model_path = Path(__file__).resolve().parent / "maxencedauphin" / "bgg-project" / "models" / "pipeline_baseline.pkl"
+    model_path = Path(__file__).resolve().parent / "pipeline_baseline.pkl"
     # If the model doesn't exist in the expected location, try the upload directory
     if not model_path.exists():
         model_path = Path(__file__).resolve().parent / "pipeline_baseline.pkl"
